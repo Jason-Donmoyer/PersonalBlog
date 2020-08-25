@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/************ MAIN LAYOUT ************/
+.container {
+  width: 100vw;
+  padding: 5px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+    "hd hd hd hd"
+    "nv nv nv nv"
+    "mn mn mn mn"
+    "ft ft ft ft"
+}
+
+#header {
+  grid-area: hd;
+  border: 1px solid black;
+}
+
+#nav {
+  grid-area: nv;
+  border: 1px solid green;
+}
+
+#main-content {
+  grid-area: mn;
+  border: 1px solid red;
+}
+
+#footer {
+  grid-area: ft;
+  border: 1px solid tomato;
+
+}
+
+/************ FLEX LAYOUTS ***********/
+
+#header {
+  display: flex;
+  justify-content: center;
+}
+
+
+#nav-menu {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: space-evenly;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid brown;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/*********** NAVIGATION ***********/
+
+#nav-menu .nav-menu-item {
+  list-style: none;
+  padding: 7px;
+  margin: 5px;
+  background-color: cyan;
+  width: 80%;
+  text-align: center;
+}
+
+.nav-menu-item a {
+  text-decoration: none;
+  color: white;
+}
+
+/*********** CARD ***********/
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: gray;
+
+}
