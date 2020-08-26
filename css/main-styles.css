@@ -11,7 +11,7 @@ html {
 /************ MAIN LAYOUT ************/
 .container {
   width: 100vw;
-  padding: 5px;
+  padding: 15px;
   display: grid;
   grid-gap: 5px;
   grid-template-areas:
@@ -33,7 +33,7 @@ html {
 
 #main-content {
   grid-area: mn;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 #footer {
@@ -61,7 +61,7 @@ html {
 .flex-container {
   display: flex;
   flex-direction: column;
-  border: 3px solid brown;
+  /* border: 3px solid brown; */
 }
 
 .row {
@@ -87,6 +87,12 @@ html {
 }
 
 /*********** CARD ***********/
+
+.card {
+  padding: 10px;
+  margin: 14px;
+  background-color: lightgrey;
+}
 
 .avatar {
   height: 40px;
