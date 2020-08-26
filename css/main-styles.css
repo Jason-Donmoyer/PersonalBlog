@@ -2,13 +2,17 @@ html {
   box-sizing: border-box;
 }
 
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
+
 /************ MAIN LAYOUT ************/
+
+
 .container {
   width: 100vw;
   padding: 15px;
@@ -21,28 +25,33 @@ html {
     "ft ft ft ft"
 }
 
+
 #header {
   grid-area: hd;
   border: 1px solid black;
 }
+
 
 #nav {
   grid-area: nv;
   border: 1px solid green;
 }
 
+
 #main-content {
   grid-area: mn;
   /* border: 1px solid red; */
 }
 
+
 #footer {
   grid-area: ft;
   border: 1px solid tomato;
-
 }
 
+
 /************ FLEX LAYOUTS ***********/
+
 
 #header {
   display: flex;
@@ -58,11 +67,13 @@ html {
   align-items: space-evenly;
 }
 
+
 .flex-container {
   display: flex;
   flex-direction: column;
   /* border: 3px solid brown; */
 }
+
 
 .row {
   display: flex;
@@ -70,7 +81,9 @@ html {
   align-items: center;
 }
 
+
 /*********** NAVIGATION ***********/
+
 
 #nav-menu .nav-menu-item {
   list-style: none;
@@ -81,12 +94,15 @@ html {
   text-align: center;
 }
 
+
 .nav-menu-item a {
   text-decoration: none;
   color: white;
 }
 
+
 /*********** CARD ***********/
+
 
 .card {
   padding: 10px;
@@ -94,10 +110,10 @@ html {
   background-color: lightgrey;
 }
 
+
 .avatar {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   background-color: gray;
-
 }
