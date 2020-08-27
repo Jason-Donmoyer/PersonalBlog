@@ -1,0 +1,9 @@
+.btn-row {
+  flex-direction: column;
+  padding: 5px;
+}
+
+.btn-row button {
+  padding: 5px;
+  margin: 5px;
+}
