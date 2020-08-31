@@ -1,9 +1,26 @@
-.btn-row {
-  flex-direction: column;
-  padding: 5px;
+.blog-title {
+  text-align: center;
 }
 
-.btn-row button {
-  padding: 5px;
-  margin: 5px;
+
+.blog-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url("../images/woman-avatar.jpg");
+  background-size: cover;
+  background-color: var(--white);
+  margin: 2em;
+}
+
+
+.blog-content {
+  padding: 2em;
 }

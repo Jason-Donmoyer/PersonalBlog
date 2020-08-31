@@ -14,6 +14,7 @@ button {
 
 button a {
   text-decoration: none;
+  display: block;
 }
 
 button a:visited {
@@ -22,4 +23,8 @@ button a:visited {
 
 button a:hover {
   color: var(--blue-green);
+}
+
+#load-more-btn {
+  width: 300px;
 }
