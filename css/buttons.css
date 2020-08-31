@@ -1,0 +1,25 @@
+/* MAIN BUTTON STYLES */
+
+
+button {
+  width: 100px;
+  align-self: center;
+  background-color: var(--beige-green);
+  color: var(--white);
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  margin: 10px;
+}
+
+button a {
+  text-decoration: none;
+}
+
+button a:visited {
+  color: var(--white);
+}
+
+button a:hover {
+  color: var(--blue-green);
+}
