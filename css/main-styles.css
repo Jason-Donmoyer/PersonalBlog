@@ -6,6 +6,7 @@
 @import "buttons.css";
 
 
+
 :root {
   --white: #fff;
   --beige-green: #CAD2C5;
@@ -44,37 +45,6 @@ html {
     "nv nv nv nv"
     "mn mn mn mn"
     "ft ft ft ft"
-}
-
-
-@media screen and (min-width: 900px) {
-
-
-  .container {
-    grid-template-areas:
-      "hd hd hd nv"
-      "mn mn mn mn"
-      "ft ft ft ft"
-  }
-
-  #header {
-    background-image: url("../images/black-and-white-bg.jpg");
-    font-size: 1.6em;
-    text-shadow: 2px 2px var(--blue-green);
-  }
-
-
-  #main-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-
-  .card {
-    max-width: 45%;
-  }
-
 }
 
 
@@ -149,6 +119,7 @@ h2 {
   font-weight: 900;
 }
 
+
 h1 {
   color: var(--beige-green);
 }
@@ -173,6 +144,7 @@ h2 {
   border: 0.5px solid var(--white);
 }
 
+
 .nav-menu-item:hover {
   border: 0.5px solid var(--dark-grey-green);
   cursor: pointer;
@@ -184,6 +156,7 @@ h2 {
   color: var(--dark-grey-green);
   display: block;
 }
+
 
 .nav-menu-item a:hover {
   color: var(--white);
@@ -212,12 +185,12 @@ h2 {
 }
 
 
-
 /*********** FOOTER ***********/
 
 #footer {
   margin-top: 25px;
 }
+
 
 .social-media-container {
   display: flex;
@@ -225,13 +198,52 @@ h2 {
   justify-content: space-around;
 }
 
+
 .social-media-container img {
   width: 50px;
   margin: 10px;
 }
 
+
 #footer p {
   font-size: 10px;
   text-align: right;
   padding: 6px;
+}
+
+
+/********** MEDIA QURIES ***********/
+
+
+@media screen and (min-width: 900px) {
+
+
+  .container {
+    grid-template-areas:
+      "hd hd hd nv"
+      "mn mn mn mn"
+      "ft ft ft ft"
+  }
+
+
+  #header {
+    background-image: url("../images/black-and-white-bg.jpg");
+    font-size: 1.6em;
+    text-shadow: 2px 2px var(--blue-green);
+  }
+
+
+  #main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  .card {
+    max-width: 45%;
+  }
+
+
 }

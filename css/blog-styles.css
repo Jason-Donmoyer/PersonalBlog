@@ -1,3 +1,27 @@
+.blog-container {
+  width: 100vw;
+  padding: 15px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+    "hd hd hd hd"
+    "bc bc bc bc"
+    "ft ft ft ft"
+}
+
+
+.author-info {
+  grid-area: ar;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.blog-img {
+  grid-area: fg;
+}
+
+
 .blog-title {
   text-align: center;
 }
@@ -9,6 +33,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 
 .blog-avatar {
   height: 100px;
@@ -22,5 +47,15 @@
 
 
 .blog-content {
+  grid-area: bc;
   padding: 2em;
+  align-self: center;
+}
+
+
+#blog-image {
+  height: 100vh;
+  background-image: url("../images/red-snapper.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
